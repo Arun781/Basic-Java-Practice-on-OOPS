@@ -2,9 +2,8 @@ package com.xworkz.stylish.waste;
 
 public class DustbinRunner {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public static void main(String[] args) 
+	{
 		System.out.println("The uses and information about dustbins are");
 		System.out.println("=================================================================");
 		Dustbin dust = new Dustbin();
@@ -38,5 +37,4 @@ public class DustbinRunner {
 		System.out.println(dustbin.moveable);
 		System.out.println("=================================================================");
 	}
-
 }
