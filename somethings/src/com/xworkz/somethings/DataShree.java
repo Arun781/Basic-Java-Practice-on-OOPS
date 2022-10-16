@@ -6,10 +6,6 @@ public class DataShree {
 		// TODO Auto-generated method stub
 		DataArun.dateOfBirth();
 		/*nameOfPerson();*/
-	
-		
-		
-  
 	}
 
 }
