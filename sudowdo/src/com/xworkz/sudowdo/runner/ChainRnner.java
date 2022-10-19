@@ -69,7 +69,6 @@ public class ChainRnner {
 		System.out.println(ref7.stolen);
 		System.out.println(ref7.usedFor);
 		System.out.println("_________________________________________________________________________________________________");
-
 	}
 
 }
