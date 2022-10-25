@@ -14,10 +14,10 @@ public class Cinema {
 	public String[] horrorMovies;
 	public String[] kannadaHeroes;
 	public String[] hindiHeroes;
-	public String[] hollywoodmovies;
+	
 
 	public Cinema(String industry, String kannada, String telugu, String hindi, int ticketPrice, String[] teluguHeroes,
-			String[] horrorMovies, String[] kannadaHeroes, String[] hindiHeroes, String[] hollywoodmovies, Names names,
+			String[] horrorMovies, String[] kannadaHeroes, String[] hindiHeroes, Names names,
 			Names names1) {
 
 		this.industry = industry;
@@ -29,7 +29,7 @@ public class Cinema {
 		this.horrorMovies = horrorMovies;
 		this.kannadaHeroes = kannadaHeroes;
 		this.hindiHeroes = hindiHeroes;
-		this.hollywoodmovies = hollywoodmovies;
+		
 		this.names = names;
 		this.names1 = names1;
 	}
@@ -46,7 +46,7 @@ public class Cinema {
 		System.out.println(this.horrorMovies);
 		System.out.println(this.kannadaHeroes);
 		System.out.println(this.hindiHeroes);
-		System.out.println(this.hollywoodmovies);
+	
 
 		System.out.println(System.lineSeparator());
 
@@ -66,10 +66,7 @@ public class Cinema {
 			String ref = hindiHeroes[i];
 			System.out.println(ref);
 		}
-		for (int i = 0; i < hollywoodmovies.length; i++) {
-			String ref = hollywoodmovies[i];
-			System.out.println(ref);
-		}
+	
 
 	}
 

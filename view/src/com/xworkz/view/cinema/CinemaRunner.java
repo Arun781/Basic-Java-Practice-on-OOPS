@@ -8,9 +8,8 @@ public class CinemaRunner {
 		String[] horror = { "mummy", "Conjuring" };
 		String[] kannada = { "Darshan", "Puneeth", "Yash" };
 		String[] hindi = { "SalMan Khan", "Sharuq Khan" };
-		String[] eng = { "Breath less", "SoundLess" };
-
-		Cinema prefer = new Cinema("Kannada", "Rajkumar","PSPK","Rithik",250, Names.Fidaa, Names.GangLeader,telugu,horror,kannada,hindi,eng);
+		
+		Cinema prefer = new Cinema("kannada","Movie","lang","national lang",25,Names.Fidaa,Names.LoveMocktail,telugu,horror,kannada,hindi);
         prefer.displayShow();
 	}
 
