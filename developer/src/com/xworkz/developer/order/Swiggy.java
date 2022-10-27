@@ -19,7 +19,7 @@ public class Swiggy {
 		System.out.println(this.email);
 		System.out.println(this.num);
 		System.out.println(this.otp);
-		System.out.println(this.hotelName.values());
+		System.out.println(this.hotelName);
 
 	}
 

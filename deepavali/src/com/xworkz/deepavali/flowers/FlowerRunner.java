@@ -9,8 +9,4 @@ public class FlowerRunner {
             flower.displayDetails();
             flower.totalPrice();
 	}
-
-	
-	
-
 }

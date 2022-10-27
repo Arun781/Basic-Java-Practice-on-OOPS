@@ -3,6 +3,7 @@ package com.xworkz.deepavali.saloon;
 import com.xworkz.deepavali.constant.SaloonShopNames;
 
 public class Saloon {
+	private static final char[] SaloonShopName = null;
 	public final String type = "ladies";
 	public SaloonShopNames names = SaloonShopNames.LOREAL;;
 	public String shopAddress;
@@ -26,6 +27,6 @@ public class Saloon {
     	System.out.println(this.shopAddress);
     	System.out.println(reviews);
     	System.out.println(type);
-    	System.out.println(names);
+    	System.out.println(Saloon.SaloonShopName);
     }
 }
