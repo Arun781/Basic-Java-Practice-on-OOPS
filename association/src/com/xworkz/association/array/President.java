@@ -6,14 +6,13 @@ public class President {
 	public String name;
 	public int tensure;
 	public Gender gender = Gender.Male;
-	
-	public President(String name,int tensure, Gender gender) {
+
+	public President(String name, int tensure, Gender gender) {
 		this.tensure = tensure;
 		this.gender = gender;
-		this.name=name;
+		this.name = name;
 	}
-	
-	
+
 	public void ShowOffer() {
 		System.out.println(this.name);
 		System.out.println(this.tensure);

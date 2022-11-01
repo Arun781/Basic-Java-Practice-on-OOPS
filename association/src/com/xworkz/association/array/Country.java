@@ -8,15 +8,12 @@ public class Country {
 	public Country(String name) {
 		this.name = name;
 	}
-
 	public void setPresident(President president) {
 		this.president = president;
 	}
-
 	public void setCities(City[] cities) {
 		this.cities = cities;
 	}
-
 	public void Showoff() {
 		if (cities != null) {
 			for (int j = 0; j < cities.length; j++) {
