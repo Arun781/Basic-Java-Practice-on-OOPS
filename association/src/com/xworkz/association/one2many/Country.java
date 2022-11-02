@@ -14,11 +14,13 @@ public class Country {
 		this.capital = capital;
 	}
 	public void ShowOff() {
+		System.out.println("=====================================================");
+		System.out.println("Declaring the country info");
 		System.out.println(this.name);
 		System.out.println(this.primeMinister);
 		System.out.println(this.sqkm);
 		System.out.println(this.capital);
-
+		System.out.println("=====================================================");
 	}
 
 }
