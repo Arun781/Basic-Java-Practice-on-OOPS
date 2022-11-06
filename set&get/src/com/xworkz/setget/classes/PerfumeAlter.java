@@ -2,16 +2,16 @@ package com.xworkz.setget.classes;
 
 public class PerfumeAlter {
 public void Alter(Perfume perfume) {
-	perfume.setBrand(null);
-	perfume.setName(null);
-	perfume.setBrandOwner(null);
-	perfume.setManufactureCountry(null);
-	perfume.setPrice(0);
-	perfume.setExpiryDate(null);
+	perfume.setBrand("USTRAA Base");
+	perfume.setName("Eau de Parfum Eau de Parfum");
+	perfume.setBrandOwner("Vipul Solanki");
+	perfume.setManufactureCountry("UK");
+	perfume.setPrice(999);
+	perfume.setExpiryDate("2022/02/11");
 	perfume.setQuality(false);
-	perfume.setQuantity(0);
-	perfume.setFragrance(null);
-	perfume.setColour(null);
+	perfume.setQuantity(100);
+	perfume.setFragrance("Fresh");
+	perfume.setColour("Blue");
 	 
 	System.out.println(perfume.getBrand());
 	System.out.println(perfume.getName());

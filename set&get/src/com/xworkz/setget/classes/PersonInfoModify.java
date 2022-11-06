@@ -2,17 +2,17 @@ package com.xworkz.setget.classes;
 
 public class PersonInfoModify {
 public void modifyingPersonINfo(PersonInfo personInfo) {
-	personInfo.setName(null);
-	personInfo.setQualification(null);
-	personInfo.setNameOfBrother(null);
-	personInfo.setNameOfFather(null);
-	personInfo.setNameOfMather(null);
-	personInfo.setPlace(null);
+	personInfo.setName("Shrisham");
+	personInfo.setQualification("BE 98.7%");
+	personInfo.setNameOfBrother("null");
+	personInfo.setNameOfFather("Prakash");
+	personInfo.setNameOfMather("Sangeetha");
+	personInfo.setPlace("Sappegattey");
 	personInfo.setAgeOfBrother(0);
-	personInfo.setAgeOfFather(0);
-	personInfo.setAgeOfMother(0);
-	personInfo.setNum(0);
-	personInfo.setAddarNum(0);
+	personInfo.setAgeOfFather(54);
+	personInfo.setAgeOfMother(45);
+	personInfo.setNum(8277738399l);
+	personInfo.setAddarNum(577452l);
 	
 	System.out.println(	personInfo.getName());
 	System.out.println(	personInfo.getNameOfBrother());

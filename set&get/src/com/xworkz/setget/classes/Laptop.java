@@ -2,7 +2,7 @@ package com.xworkz.setget.classes;
 
 public class Laptop {
 	private String brand = "Dell";
-	String modelName = "Inspiron 3511";
+	public String modelName = "Inspiron 3511";
 	String processorBrand = "Intel";
 	String processorName = "Core-i5";
 	String graphicProcessor = "Intel Integrated DDR4";

@@ -3,17 +3,17 @@ package com.xworkz.setget.classes;
 public class BikeModify {
 	
 	public void alter(Bike bike) {
-		bike.setBikeBrand(null);
-		bike.setBore(0);
-		bike.setWheelsType(null);
-		bike.setModelName(0);
-		bike.setEngineType(null);
-		bike.setWheelSizerear(0);
-		bike.setWheelSizeback(0);
-		bike.setEngineDisplacement(0);
-		bike.setMaxTorque(0);
-		bike.setStroke(0);
-		bike.setSpeedometer(null);
+		bike.setBikeBrand("BULLET");
+		bike.setBore(82);
+		bike.setWheelsType("Alloy");
+		bike.setModelName(2021);
+		bike.setEngineType("Single Cylinder, 4 Valve, Liquid Cooled, FI");
+		bike.setWheelSizerear(425.5);
+		bike.setWheelSizeback(425.5);
+		bike.setEngineDisplacement(215.5);
+		bike.setMaxTorque(12000);
+		bike.setStroke(51.2);
+		bike.setSpeedometer("Digital idey");
 		
 		System.out.println(bike.getBikeBrand());
 		System.out.println(bike.getBore());
