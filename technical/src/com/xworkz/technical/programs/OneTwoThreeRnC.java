@@ -11,7 +11,7 @@ public class OneTwoThreeRnC {
 			}
 			System.out.println("Arun");
 		}
-		/*==========================================================*/
+		/* ========================================================== */
 		System.out.println("===============================");
 		// another way for words and num
 		for (int i = 0; i <= 3; i++) {
@@ -24,7 +24,7 @@ public class OneTwoThreeRnC {
 			}
 			System.out.println("");
 		}
-		/*==========================================================*/
+		/* ========================================================== */
 		System.out.println("===============================");
 		// num & words & num
 		for (int i = 0; i <= 3; i++) {
@@ -37,42 +37,189 @@ public class OneTwoThreeRnC {
 			}
 			System.out.println("");
 		}
-		/*==========================================================*/
+		/* ========================================================== */
 		System.out.println("===============================");
 		// Pyramid
 		/*
-		 * # 
-		 * ## 
-		 * ### 
-		 * ####
+		 * # ## ### ####
 		 */
-		for (int i=0; i<=3; ++i) {
-			for (int j=0; j<=i; ++j) {
+		for (int i = 0; i <= 3; ++i) {
+			for (int j = 0; j <= i; ++j) {
 				System.out.print(" " + "#");
 			}
 			System.out.println("");
 		}
-		/*==========================================================*/
+		/* ========================================================== */
 		System.out.println("===============================");
 		/*
-		 * 0
-		 * 11
-		 * 222
-		 * 3333*/
-		for (int i=0; i<=3; ++i) {
-			for (int j=0; j<=i; ++j) {
-				System.out.print(" "+""+i);
+		 * 0 11 222 3333
+		 */
+		for (int i = 0; i <= 3; ++i) {
+			for (int j = 0; j <= i; ++j) {
+				System.out.print(" " + "" + i);
 			}
 			System.out.println("");
 		}
-		/*==========================================================*/
+		/* ========================================================== */
 		System.out.println("===============================");
-		
-		for (int i=0; i<=3; i++) {
-			for (int j=i; j<=3; j++) {
+
+		for (int i = 0; i <= 3; i++) {
+			for (int j = i; j <= 3; j++) {
 				System.out.print(j);
 			}
-		System.out.println("");
+			System.out.println("");
 		}
+
+		System.out.println("===============================");
+		// ===================================================
+		int n = 4;
+		// printing the dollars in rectangle triangle
+		// main loop
+		for (int i = 1; i <= n; i++) {
+			// printting sapce
+			for (int j = n - 1; j >= i; j--) {
+				System.out.print(" ");
+			}
+			for (int k = 1; k <= i; k++) {
+				System.out.print("$");
+			}
+			System.out.println("");
+		}
+		System.out.println("===============================");
+		// ===================================================
+		int a = 4;
+		// printing the dollars in triangle
+		// main loop
+		for (int i = 1; i <= a; i++) {
+			// printting sapce
+			for (int j = a - 1; j >= i; j--) {
+				System.out.print(" ");
+			}
+			for (int k = 1; k <= i; k++) {
+				System.out.print("$ ");
+			}
+			System.out.println("");
+		}
+		System.out.println("===============================");
+		// ===================================================
+
+		int b = 4;
+		// printing the dollars in triangle
+		// main loop
+		for (int i = 1; i <= b; i++) {
+			// printting sapce
+			for (int j = a - 1; j >= i; j--) {
+				System.out.print(" ");
+			}
+			for (int k = 1; k <= i; k++) {
+				System.out.print(i);
+			}
+			System.out.println("");
+		}
+		System.out.println("===============================");
+		// ===================================================
+		int c = 4;
+		// printing the num in triangle
+		// main loop
+		for (int i = 1; i <= c; i++) {
+			// printting sapce
+			for (int j = c - 1; j >= i; j--) {
+				System.out.print(" ");
+			}
+			for (int k = 1; k <= i; k++) {
+				System.out.print(k);
+			}
+			System.out.println("");
+		}
+		System.out.println("===============================");
+		// ===================================================
+		int d = 4;
+		// printing the num in triangle
+		// main loop
+		for (int i = 1; i <= d; i++) {
+			// printting sapce
+			for (int j = d - 1; j >= i; j--) {
+				System.out.print(j);
+			}
+			for (int k = 1; k <= i; k++) {
+				System.out.print(k);
+			}
+			System.out.println("");
+		}
+		System.out.println("===============================");
+		// ===================================================
+		int e = 4;
+		// printing the num in triangle
+		// main loop
+		for (int i = 1; i <= e; i++) {
+			// printting sapce
+			for (int j = c - 1; j >= i; j--) {
+				if(j==2) {
+					System.out.print("Arun");
+				}
+				else {
+					System.out.print(j);
+				}
+			}
+			for (int k = 1; k <= i; k++) {
+				if(k==2) {
+					System.out.print(" "+"Arun"+" ");
+				}
+				else {
+					System.out.print(k);
+				}
+			}
+			System.out.println("");
+		}
+		System.out.println("===============================");
+		// ===================================================
+		
+		
+		int g = 4;
+		
+		for (int i = g; i >= 1; i--) {
+			
+			for (int j = g - 1; j >= i; j--) {
+				System.out.print(" ");
+			}
+			for (int k = 1; k <= i; k++) {
+				System.out.print("& ");
+			}
+			System.out.println("");
+		}
+		
+		// ===================================================
+		System.out.println("===============================");
+		
+		int h = 4;
+		// printing the num in triangle
+		// main loop
+		for (int i = 1; i <= h; i++) {
+			// printting sapce
+			for (int j = h - 1; j >= i; j--) {
+				System.out.print(" ");
+			}
+			for (int k = 1; k <= i; k++) {
+				System.out.print("% ");
+			}
+			System.out.println("");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+		
+
 	}
 }
