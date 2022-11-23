@@ -60,10 +60,7 @@ public class CoffeesRunner {
 		System.out.println("The ColdCoffe is Sugar is SugarLess :-"+hegidey.sugar);
 		System.out.println("The Type of the ColdCoffe:-"+hegidey.type);
 		System.out.println("=====================================================");
-		
-
-		
-		
+	
 	}
 
 }

@@ -1,7 +1,7 @@
 package com.xworkz.stylish.smoke;
 
 public class Cigarette {
-	public String brand;
+	public  String brand;
 	public String name;
 	public String country;
 	public int price;
@@ -10,7 +10,6 @@ public class Cigarette {
 	public String ownerName;
 	public long dateOfManufacture;
 	public String started;
-	
 	public String nicotinContent="High Nicotin";
 	public String  flavor="Mint";
 	public String harmMassage="Very Harmfull ro health and environment";
@@ -20,9 +19,4 @@ public class Cigarette {
 	public String color="white";
 	public String paper="Rolling paper";
 	public String produce="carbon monoxide";
-	
-	
-	
-	
-
 }

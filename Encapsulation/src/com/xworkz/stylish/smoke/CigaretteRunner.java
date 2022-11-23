@@ -34,7 +34,6 @@ public class CigaretteRunner {
 		System.out.println("the paper of the cigarette:-"+smokeing1.paper);
 		System.out.println("The cigarette produces the "+smokeing1.produce);
 		System.out.println("============================================================");
-		
 		smokeing1=smokeing;
 		System.out.println(smokeing.brand);
 		System.out.println(smokeing.name);
@@ -43,10 +42,7 @@ public class CigaretteRunner {
 		System.out.println(smokeing.quantity);
 		System.out.println(smokeing.located);
 		System.out.println(smokeing.dateOfManufacture);
-		System.out.println(smokeing.started);
-		
-		
-		
+		System.out.println(smokeing.started);	
 	}
 
 }

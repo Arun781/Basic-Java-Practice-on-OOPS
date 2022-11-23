@@ -3,7 +3,7 @@ package com.xworkz.technical.programs;
 public abstract class IncompleteAbs {
 
 	public IncompleteAbs() {
-System.out.println("Calling Incompleteabs ");	
+		System.out.println("Calling Incompleteabs ");	
 
 	}
 	

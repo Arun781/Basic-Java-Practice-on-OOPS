@@ -6,8 +6,9 @@ public class CountryRunner {
 
 	public static void main(String[] args) {
 		Country country = new Country("India");
-		
 		President president = new President("Manmohan",5,Gender.Male);
+		
+		
 		country.setPresident(president);
 		Name name = new Name("Manmohan Singh");
 		Name name1 = new Name("Manmohan");
