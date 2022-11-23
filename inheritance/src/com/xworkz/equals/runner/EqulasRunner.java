@@ -3,6 +3,7 @@ package com.xworkz.equals.runner;
 import com.xworkz.equals.main.Currency;
 import com.xworkz.equals.main.God;
 import com.xworkz.equals.main.Hospital;
+import com.xworkz.equals.main.Institution;
 import com.xworkz.equals.main.Paint;
 import com.xworkz.equals.main.Vehicle;
 import com.xworkz.equals.main.WaterBottle;
@@ -33,8 +34,29 @@ public class EqulasRunner {
 		System.out.println("========================================================");
 		boolean same = paint.equals(paint1);
 		System.out.println(same);
-		System.out.println(
-				"________________________________________________________________________________________________________________________________________________________________");
+		System.out.println("________________________________________________________________________________________________________________________________________________________________");
+		
+		Institution institution = new Institution();
+		System.out.println(institution);
+		Institution institution1 = new Institution();
+		institution1.setName(null);
+		institution1.setLocation(null);
+		institution1.setDist(null);
+		institution1.setPropertyOwned(null);
+		institution1.setLeased(null);
+		institution1.setFloor(0);
+		institution1.setNoOfBuilding(0);
+		institution1.setNum(0);
+		institution1.setInstitutuionCode(0);
+		institution1.setPresidentName(null);
+		System.out.println(institution1);
+		institution=institution1;
+		System.out.println(institution==institution1);
+		boolean showOff = institution.equals(institution1);
+		System.out.println(showOff);
+		
+		System.out.println("________________________________________________________________________________________________________________________________________________________________");
+
 		Vehicle vehicle = new Vehicle("Bike", "MT", "Yamaha", 180000, 85254, "Large", "Two Wheeler", "Petrole",
 				7985748585l, 2022);
 		System.out.println(vehicle);
@@ -85,8 +107,7 @@ public class EqulasRunner {
 		System.out.println("===========================================================================");
 		boolean same1 = false;
 		System.out.println(same1);
-		System.out.println(
-				"________________________________________________________________________________________________________________________________________________________________");
+		System.out.println("________________________________________________________________________________________________________________________________________________________________");
 
 		God god = new God();
 		god.setEntryFees(60);
@@ -119,14 +140,14 @@ public class EqulasRunner {
 		hospital.setTotalStaffs(60);
 		hospital.setType("multi-speciality");
 		System.out.println(hospital);
-		Hospital hospital2 = new Hospital("appolo", "government-hospital", 100, 20, 'l', "raju", "pune", 628354L, false,
-				18);
+		Hospital hospital2 = new Hospital("appolo", "government-hospital", 100, 20, 'l', "raju", "pune", 628354L, false,18);
 		System.out.println(hospital2);
 		boolean iceCreame = hospital.equals(hospital2);
 		System.out.println(iceCreame);
-		System.out.println(
-				"________________________________________________________________________________________________________________________________________________________________");
-
+		System.out.println("________________________________________________________________________________________________________________________________________________________________");
+		
+		
+		
 	}
 
 }
