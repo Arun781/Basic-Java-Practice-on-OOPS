@@ -33,7 +33,7 @@ public class Currency {
 				+ ", uniformity=" + uniformity + ", divisibility=" + divisibility + ", acceptability=" + acceptability
 				+ ", currencyIn=" + currencyIn + ", currency=" + currency + "]";
 	}
-	
+	@Override
 	public boolean equals(Object country) {
 		System.out.println("Running equals method in Currency");
 		if(country instanceof Currency) {

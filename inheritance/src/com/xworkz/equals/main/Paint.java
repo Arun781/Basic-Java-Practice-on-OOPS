@@ -41,12 +41,13 @@ public class Paint {
 				+ ", waterResistance=" + waterResistance + ", heatResistance=" + heatResistance + ", type=" + type
 				+ ", durability=" + durability + "]";
 	}
+	@Override
 	public boolean equals(Object colur) {
 		System.out.println("Running equals method in Paint");
 		if(colur instanceof Paint) {
 			System.out.println("If colur is Paint ,can check the properties");
 			Paint paint = (Paint) colur;
-			System.out.println(paint);
+			//System.out.println(paint);
 		}
 		else {
 			System.out.println("If colur is not Paint, cannot check the properties");

@@ -37,7 +37,7 @@ public class Vehicle {
 				+ ", price=" + price + ", num=" + num + ", size=" + size + ", wheelType=" + wheelType + ", fuelType="
 				+ fuelType + ", registrationNum=" + registrationNum + ", model=" + model + "]";
 	}
-	
+	@Override
 	public boolean equals(Object convert) {
 		if(convert instanceof Vehicle) {
 			System.err.println("If convert is Vehicle can check the properties");

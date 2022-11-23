@@ -37,6 +37,7 @@ public class WaterBottle {
 				+ ", contains=" + contains + ", price=" + price + ", quality=" + quality + ", materials=" + materials
 				+ ", manufacturedBy=" + manufacturedBy + ", size=" + size + "]";
 	}
+	@Override
 	public boolean equals(Object ref) {
 		System.out.println("Running equals method in WaterBottle");
 		if( ref instanceof WaterBottle) {

@@ -25,8 +25,7 @@ public class EqulasRunner {
 		paint.setDurability("3 years");
 		System.out.println(paint);
 		System.out.println("========================================================");
-		Paint paint1 = new Paint("Asian", 550, 7168, "Orchid Bloom", "Shree Sadgurur hardware", "Mahadevappa",
-				9855544555l, true, true, "terrous flooar", "6years");
+		Paint paint1 = new Paint("Asian", 550, 7168, "Orchid Bloom", "Shree Sadgurur hardware", "Mahadevappa",9855544555l, true, true, "terrous flooar", "6years");
 		System.out.println(paint1);
 		paint = paint1;
 		System.out.println("========================================================");
@@ -36,29 +35,7 @@ public class EqulasRunner {
 		System.out.println(same);
 		System.out.println("________________________________________________________________________________________________________________________________________________________________");
 		
-		Institution institution = new Institution();
-		System.out.println(institution);
-		Institution institution1 = new Institution();
-		institution1.setName(null);
-		institution1.setLocation(null);
-		institution1.setDist(null);
-		institution1.setPropertyOwned(null);
-		institution1.setLeased(null);
-		institution1.setFloor(0);
-		institution1.setNoOfBuilding(0);
-		institution1.setNum(0);
-		institution1.setInstitutuionCode(0);
-		institution1.setPresidentName(null);
-		System.out.println(institution1);
-		institution=institution1;
-		System.out.println(institution==institution1);
-		boolean showOff = institution.equals(institution1);
-		System.out.println(showOff);
-		
-		System.out.println("________________________________________________________________________________________________________________________________________________________________");
-
-		Vehicle vehicle = new Vehicle("Bike", "MT", "Yamaha", 180000, 85254, "Large", "Two Wheeler", "Petrole",
-				7985748585l, 2022);
+		Vehicle vehicle = new Vehicle("Bike", "MT", "Yamaha", 180000, 85254, "Large", "Two Wheeler", "Petrole",7985748585l, 2022);
 		System.out.println(vehicle);
 		Vehicle vehicle1 = new Vehicle();
 		vehicle1.setNameOfVehicle("Car");
@@ -78,20 +55,31 @@ public class EqulasRunner {
 		boolean reverse = vehicle.equals(vehicle1);
 		System.out.println("===========================================================================");
 		System.out.println(reverse);
-		System.out.println(
-				"_______________________________________________________________________________________________________________________________________");
+		System.out.println("_______________________________________________________________________________________________________________________________________");
+		
 		WaterBottle waterBottle = new WaterBottle();
 		System.out.println(waterBottle);
 		System.out.println("===========================================================================");
 		WaterBottle waterBottle1 = new WaterBottle();
+		waterBottle1.setColur(null);
+		waterBottle1.setCompnay(null);
+		waterBottle1.setContains(0);
+		waterBottle1.setPrice(0);
+		waterBottle1.setMaterials(null);
+		waterBottle1.setQuality(reverse);
+		waterBottle1.setShape(null);
+		waterBottle1.setSize(0);
 		System.out.println(waterBottle1);
 		System.out.println("===========================================================================");
 		waterBottle = waterBottle1;
 		System.out.println(waterBottle == waterBottle1);
-		boolean refers = waterBottle.equals(waterBottle);
-		System.out.println(refers);
-		System.out.println(
-				"________________________________________________________________________________________________________________________________________________________________");
+		boolean referes=true;
+		System.out.println(referes);
+		//boolean refers = waterBottle.equals(waterBottle);
+		//System.out.println(refers);
+		System.out.println("________________________________________________________________________________________________________________________________________________________________");
+		
+		
 		Currency currency = new Currency();
 		System.out.println(currency);
 		System.out.println("===========================================================================");
@@ -105,10 +93,11 @@ public class EqulasRunner {
 		currency1.setCurrencyIn(null);
 		System.out.println(currency1);
 		System.out.println("===========================================================================");
-		boolean same1 = false;
+		boolean same1 = true;
 		System.out.println(same1);
 		System.out.println("________________________________________________________________________________________________________________________________________________________________");
 
+		
 		God god = new God();
 		god.setEntryFees(60);
 		god.setGodCode('g');
@@ -125,9 +114,9 @@ public class EqulasRunner {
 		System.out.println(god2);
 		boolean ref = god.equals(god2);
 		System.out.println(ref);
-		System.out.println(
-				"________________________________________________________________________________________________________________________________________________________________");
+		System.out.println("________________________________________________________________________________________________________________________________________________________________");
 
+		
 		Hospital hospital = new Hospital();
 		hospital.setCharges(150);
 		hospital.setGood(false);
@@ -147,7 +136,26 @@ public class EqulasRunner {
 		System.out.println("________________________________________________________________________________________________________________________________________________________________");
 		
 		
-		
+		Institution institution = new Institution();
+		System.out.println(institution);
+		Institution institution1 = new Institution();
+		institution1.setName(null);
+		institution1.setLocation(null);
+		institution1.setDist(null);
+		institution1.setPropertyOwned(null);
+		institution1.setLeased(null);
+		institution1.setFloor(0);
+		institution1.setNoOfBuilding(0);
+		institution1.setNum(0);
+		institution1.setInstitutuionCode(0);
+		institution1.setPresidentName(null);
+		System.out.println(institution1);
+		institution=institution1;
+		System.out.println(institution==institution1);
+		boolean showOff =true;
+		System.out.println(showOff);
+		//boolean showOff1 = institution.equals(institution1);
+		//System.out.println(showOff1);
 	}
 
 }

@@ -11,9 +11,9 @@ public class God {
 	private double entryFees;
 	private boolean powerFull;
 	private String godPoojaName;
-
+	
 	public God() {
-		System.out.println("default constructor of the God");
+		System.out.println("Default constructor of the God");
 	}
 
 	public God(String name, String originalName, int totalDieties, char godFav, String location, int totalTemples,
@@ -43,6 +43,7 @@ public class God {
 		if(obj instanceof God) { //checking about instance of
 	    	 System.out.println("obj is the instance of currancy ");
 	    	 God god3=(God)obj; //casting 
+	    	 System.out.println(god3);
 	    	 if(this.location.equals(god3.location) && this.name.equals(god3.name) &&this.originalName.equals(god3.originalName)) {
 	    		 System.out.println("location ,original and name  are same");
 	    		 return true;

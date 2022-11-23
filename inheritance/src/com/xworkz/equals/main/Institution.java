@@ -34,7 +34,7 @@ public class Institution {
 				+ propertyOwned + ", leased=" + leased + ", floor=" + floor + ", noOfBuilding=" + noOfBuilding
 				+ ", num=" + num + ", institutuionCode=" + institutuionCode + ", presidentName=" + presidentName + "]";
 	}
-	
+	@Override
 	public boolean equals(Object college) {
 		System.out.println("If object are same return true");
 		if(college instanceof Institution )
