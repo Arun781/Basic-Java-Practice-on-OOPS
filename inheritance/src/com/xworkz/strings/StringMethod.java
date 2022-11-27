@@ -8,7 +8,7 @@ public class StringMethod {
 		System.out.println("_________________________________");
 		source1 = source1 + " Veerapur";
 
-		String source2 = source1.concat(",Hi");
+		String source2 = source1.concat("+Hi");
 		System.out.println(source2);
 		System.out.println("_________________________________");
 
