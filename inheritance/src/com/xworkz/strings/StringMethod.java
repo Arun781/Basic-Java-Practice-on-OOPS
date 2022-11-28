@@ -2,7 +2,7 @@ package com.xworkz.strings;
 
 public class StringMethod {
 	public static void main(String[] args) {
-
+		
 		String source1 = "Arun";
 		System.out.println(source1);
 		System.out.println("_________________________________");

@@ -16,7 +16,6 @@ public class StringsMethodsHW {
 		System.out.println("(2)Split all by space ");
 		System.out.println("____________________________________________________________________");
 		String[] splitstament1 = trippleRide.split(" ");
-		
 		for (int i = 0; i < splitstament1.length; i++) {
 			System.out.println(splitstament1[i]);
 		}
@@ -115,8 +114,6 @@ public class StringsMethodsHW {
 		for (int i = 0; i < palindrome.length; i++) {
 			String[] palindrome1 = palindrome[i].split(",");
 			for (int j = 0; j < palindrome1.length; j++) {
-				// System.out.println(palindrome1[j]);
-				// if(palindrome[i]==palindrome1[j]) {
 				StringBuilder str1 = new StringBuilder(palindrome1[j]);
 				str1.reverse();
 				String rev = str1.toString();
