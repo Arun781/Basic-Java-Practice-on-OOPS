@@ -154,18 +154,16 @@ public class OneTwoThreeRnC {
 		for (int i = 1; i <= e; i++) {
 			// printting sapce
 			for (int j = c - 1; j >= i; j--) {
-				if(j==2) {
+				if (j == 2) {
 					System.out.print("Arun");
-				}
-				else {
+				} else {
 					System.out.print(j);
 				}
 			}
 			for (int k = 1; k <= i; k++) {
-				if(k==2) {
-					System.out.print(" "+"Arun"+" ");
-				}
-				else {
+				if (k == 2) {
+					System.out.print(" " + "Arun" + " ");
+				} else {
 					System.out.print(k);
 				}
 			}
@@ -173,12 +171,11 @@ public class OneTwoThreeRnC {
 		}
 		System.out.println("===============================");
 		// ===================================================
-		
-		
+
 		int g = 4;
-		
+
 		for (int i = g; i >= 1; i--) {
-			
+
 			for (int j = g - 1; j >= i; j--) {
 				System.out.print(" ");
 			}
@@ -187,10 +184,9 @@ public class OneTwoThreeRnC {
 			}
 			System.out.println("");
 		}
-		
+
 		// ===================================================
 		System.out.println("===============================");
-		
 		int h = 4;
 		// printing the num in triangle
 		// main loop
@@ -204,22 +200,139 @@ public class OneTwoThreeRnC {
 			}
 			System.out.println("");
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 
+		System.out.println("__________________________________________");
 
-		
+		for (int row = 1; row <= 5; row++) {
+			for (int col = 1; col <= 5; col++) {
+				if (row == 1 && col == 5) {
+					System.out.print("Xworkz");
+				} else {
+					System.out.print(col);
+				}
+			}
+			System.out.println();
+		}
 
+		System.out.println("__________________________________________");
+		for (int row = 1; row <= 5; row++) {
+			for (int col = 1; col <= 5; col++) {
+				if (col == 1 || col == 5 || row == 1 || row == 5) {
+					System.out.print("@");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("__________________________________________");
+
+		for (int row = 1; row <= 5; row++) {
+			for (int col = 1; col <= 5; col++) {
+				if (col == 1 || col == 5 || row == 1) {
+					System.out.print("@");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("_____________________________________________");
+		for (int row = 1; row <= 5; row++) {
+			for (int col = 1; col <= 5; col++) {
+				if (col == 5 || row == 1 || row == 5) {
+					System.out.print("@");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("_____________________________________________");
+		for (int row = 1; row <= 5; row++) {
+			for (int col = 1; col <= 5; col++) {
+				if (col == 1 || row == 1 || row == 5) {
+					System.out.print("@");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("_____________________________________________");
+		for (int row = 1; row <= 5; row++) {
+			for (int col = 1; col <= 5; col++) {
+				if (col == 1 || row == 1 || col == 5 || row == 5 || row == 3 || col == 3) {
+					System.out.print("@");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("_____________________________________________");
+		for (int row = 1; row <= 5; row++) {
+			for (int col = 1; col <= 5; col++) {
+				if (col == 1 || row == 1 || col == 5 || row == 5 || row == 2 && col == 2 || row == 2 & col == 4
+						|| row == 3 && col == 3 || row == 4 && col == 2 || row == 4 && col == 4) {
+					System.out.print("@");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("_____________________________________________");
+
+		for (int row = 1; row <= 5; row++) {
+			for (int col = 1; col <= 5; col++) {
+				if (col == 1 || row == 1 || col == 2 && row == 2 || col == 3 && row == 3 || col == 4 && row == 4
+						|| col == 5 && row == 5) {
+					System.out.print("@");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("_____________________________________________");
+		for (int row = 1; row <= 6; row++) {
+			for (int col = 1; col <= 5; col++) {
+				if (row == 1 || row == 5 && col == 3 || row == 4 && col == 4 || row == 3 && col == 5
+						|| row == 2 && col == 1 || row == 2 && col == 5 || row == 4 && col == 2
+						|| row == 3 && col == 1) {
+					System.out.print("@");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("_____________________________________________");
+		for (int row = 1; row <= 6; row++) {
+			for (int col = 1; col <= 6; col++) {
+				if (row == 5 && col == 3 || row == 4 && col == 4 || row == 3 && col == 5
+						|| row == 2 && col == 1 || row == 2 && col == 5 || row == 4 && col == 2
+						|| row == 3 && col == 1) {
+					System.out.print("@");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("_____________________________________________");
+		for (int row = 1; row <= 6; row++) {
+			for (int col = 1; col <= 6; col++) {
+				if (row == 3 && col == 5 || row == 4 && col == 4 || row == 5 && col == 3
+					|| row == 1 && col == 2 || row == 5 && col == 3 || row == 2 && col == 4
+					|| row == 1 && col == 3) {
+					System.out.print("@");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
 	}
 }
