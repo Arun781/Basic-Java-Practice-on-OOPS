@@ -17,16 +17,21 @@ public class InstituteRunner {
 		Institute institute = new XworkzRajajinagar ();//11
 		
 		institute.teaching();
+		System.out.println("______________________________________________________");
 		developmentInstitute.teaching();
 		developmentInstitute.nameOfPro();
+		System.out.println("______________________________________________________");
+		xworkz.teaching();
+		xworkz.nameOfPro();
+		System.out.println("______________________________________________________");
 		testingInstitute.teaching();
-		testingInstitute.numOfTrainees();
+		System.out.print("---->");testingInstitute.numOfTrainees();
 		testingInstitute.nameOfPro();
-		xworkz.teaching();
-		xworkz.teaching();
+		System.out.println("______________________________________________________");
 		xworkzRajajinagar.teaching();
-		xworkzRajajinagar.numOfTrainees();
+		System.out.print("---->");xworkzRajajinagar.numOfTrainees();
 		xworkzRajajinagar.nameOfPro();
+		System.out.println("______________________________________________________");
 	}
 
 }
