@@ -1,5 +1,4 @@
 package com.xworkz.interaction.rules;
-
 public class AccountHolder {
 	private Librarian librarianFollows;
 	public AccountHolder() {
