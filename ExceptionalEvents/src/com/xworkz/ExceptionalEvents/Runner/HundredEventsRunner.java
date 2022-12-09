@@ -6,6 +6,7 @@ public class HundredEventsRunner {
 
 	public static void main(String[] args) throws Exception {
 		HundredEvents hundredEvents = new HundredEvents();
+		
 		hundredEvents.name();
 		hundredEvents.gender();
 		hundredEvents.Book();
@@ -44,6 +45,7 @@ public class HundredEventsRunner {
 		hundredEvents.telephone();
 
 		System.out.println("Running the error Exception");
+		
 		hundredEvents.Method1();
 		hundredEvents.Method2();
 		hundredEvents.Method3();
@@ -56,7 +58,7 @@ public class HundredEventsRunner {
 		hundredEvents.Method10();
 		hundredEvents.Method11();
 		hundredEvents.Method12();
-		hundredEvents.Method13();
+		hundredEvents.Method13(); 
 		hundredEvents.Method14();
 		hundredEvents.Method15();
 		hundredEvents.Method16();
@@ -81,6 +83,7 @@ public class HundredEventsRunner {
 		hundredEvents.Method35();
 		
 		System.out.println("Running the Exception error");
+		
 		hundredEvents.system1();
 		hundredEvents.system2();
 		hundredEvents.system3();

@@ -6,10 +6,8 @@ import java.awt.FontFormatException;
 import java.awt.color.CMMException;
 import java.awt.datatransfer.MimeTypeParseException;
 import java.awt.image.ImagingOpException;
-import java.beans.IntrospectionException;
 import java.io.IOError;
 import java.io.IOException;
-import java.lang.annotation.AnnotationFormatError;
 import java.lang.annotation.AnnotationTypeMismatchException;
 import java.lang.annotation.IncompleteAnnotationException;
 import java.lang.instrument.IllegalClassFormatException;
@@ -34,9 +32,6 @@ import java.util.IllformedLocaleException;
 import java.util.MissingResourceException;
 import java.util.NoSuchElementException;
 import java.util.concurrent.BrokenBarrierException;
-import java.util.concurrent.ExecutionException;
-import java.util.prefs.BackingStoreException;
-import java.util.prefs.InvalidPreferencesFormatException;
 import java.util.zip.DataFormatException;
 import javax.lang.model.type.MirroredTypesException;
 import javax.management.BadAttributeValueExpException;
@@ -56,7 +51,6 @@ import javax.swing.tree.ExpandVetoException;
 import javax.swing.undo.CannotRedoException;
 import javax.swing.undo.CannotUndoException;
 import javax.xml.bind.DataBindingException;
-import javax.xml.bind.JAXBException;
 import javax.xml.crypto.KeySelectorException;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.parsers.FactoryConfigurationError;
@@ -67,11 +61,9 @@ import org.w3c.dom.events.EventException;
 import org.w3c.dom.ls.LSException;
 import com.sun.javafx.geom.IllegalPathStateException;
 import com.sun.javafx.geom.transform.NoninvertibleTransformException;
-import com.sun.xml.internal.ws.policy.privateutil.ServiceConfigurationError;
 
 public class HundredEvents {
 	public void name() {
-		
 		System.out.println("Running the name");
 		throw new AnnotationTypeMismatchException(null, null);
 	}
