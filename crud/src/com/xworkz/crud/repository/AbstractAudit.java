@@ -4,10 +4,6 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 public abstract class AbstractAudit implements Serializable {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private String createdBy;
 	private LocalDateTime createdDate;
 	private String updatedBy;
@@ -15,6 +11,12 @@ public abstract class AbstractAudit implements Serializable {
 
 	public AbstractAudit() {
 		System.out.println("Creating the no Arguments Cons");
+	}
+
+	@Override
+	public String toString() {
+		return "AbstractAudit [createdBy=" + createdBy + ", createdDate=" + createdDate + ", updatedBy=" + updatedBy
+				+ ", updatedDate=" + updatedDate + "]";
 	}
 
 	public String getCreatedBy() {

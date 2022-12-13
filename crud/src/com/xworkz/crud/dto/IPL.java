@@ -1,8 +1,9 @@
 package com.xworkz.crud.dto;
 
+import java.time.LocalDateTime;
+
 import com.xworkz.crud.repository.AbstractAudit;
 
-@SuppressWarnings("serial")
 public class IPL extends AbstractAudit{
 	private String teamName;
 	private String captainName;
@@ -81,6 +82,18 @@ public class IPL extends AbstractAudit{
 
 	public void setDefeats(int defeats) {
 		this.defeats = defeats;
+	}
+
+
+	public void setCreatedDate(int i, int j, int k, int l, int m) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void setUpdatedDate(LocalDateTime now) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 

@@ -1,19 +1,21 @@
 package com.xworkz.crud.dto;
 
-public class IPLRepositoryImplements {
+import com.xworkz.crud.repository.IPLRepository;
+
+public class IPLRepositoryImplements implements IPLRepository {
 	private IPL[] ipl = new IPL[10];
 	private int currentIndex = 0;
 	
-	public boolean create(IPL ipl) {
+	@Override
+	public boolean create(IPL ipl) throws ArrayisFullcantaddMore {
 		System.out.println("running create of IPL"+ipl);
-		if(this.currentIndex>this.ipl.length) {
-			System.err.println("Sixe exceeded cannot add moew ipl");
-			return false;
+		if(this.currentIndex>=this.ipl.length) {
+			System.out.println("Sixe exceeded cannot add moew ipl");
+			throw new ArrayisFullcantaddMore();		
 		}
-		this.ipl[this.currentIndex]=ipl;
-		System.out.println("Saved"+ipl+"in index"+this.currentIndex++);
-		this.currentIndex++;
+			this.ipl[this.currentIndex]=ipl;
+			System.out.println("Saved"+ipl+"in index"+this.currentIndex++);
+			this.currentIndex++;
 		return false;
-		
-	}
+}
 }
