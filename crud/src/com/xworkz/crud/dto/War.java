@@ -1,8 +1,8 @@
 package com.xworkz.crud.dto;
 
-import java.time.LocalDateTime;
 
-import com.xworkz.crud.repository.AbstractAudit;
+
+import com.xworkz.crud.exception.AbstractAudit;
 
 public class War extends AbstractAudit {
 	private String name;
@@ -12,15 +12,40 @@ public class War extends AbstractAudit {
 	private String startedWith;
 	private String wonBy;
 	private int noOfDeaths;
+	private String findBy;
+	
 
-	@Override
-	public String toString() {
-		return "War [name=" + name + ", startDate=" + startDate + ", endDate=" + endDate + ", startedBy=" + startedBy
-				+ ", startedWith=" + startedWith + ", wonBy=" + wonBy + ", noOfDeaths=" + noOfDeaths + "]";
+	public String getFindBy() {
+		return findBy;
+	}
+
+	public void setFindBy(String findBy) {
+		this.findBy = findBy;
+	}
+
+
+	public War(String name, int startDate, int endDate, String startedBy, String startedWith, String wonBy,
+			int noOfDeaths, String findBy) {
+		super();
+		this.name = name;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.startedBy = startedBy;
+		this.startedWith = startedWith;
+		this.wonBy = wonBy;
+		this.noOfDeaths = noOfDeaths;
+		this.findBy = findBy;
 	}
 
 	public War() {
 		System.out.println("The no Arguments constructor is created");
+	}
+
+	@Override
+	public String toString() {
+		return "War [name=" + name + ", startDate=" + startDate + ", endDate=" + endDate + ", startedBy=" + startedBy
+				+ ", startedWith=" + startedWith + ", wonBy=" + wonBy + ", noOfDeaths=" + noOfDeaths + ", findBy="
+				+ findBy + ", toString()=" + super.toString() + "]";
 	}
 
 	public String getName() {
@@ -77,11 +102,6 @@ public class War extends AbstractAudit {
 
 	public void setNoOfDeaths(int noOfDeaths) {
 		this.noOfDeaths = noOfDeaths;
-	}
-
-	public void setCreatedDateTime(LocalDateTime now) {
-		// TODO Auto-generated method stub
-		
 	}
 
 }

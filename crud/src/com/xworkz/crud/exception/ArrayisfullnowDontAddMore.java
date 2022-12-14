@@ -1,4 +1,4 @@
-package com.xworkz.crud.repository;
+package com.xworkz.crud.exception;
 
 public class ArrayisfullnowDontAddMore extends RuntimeException {
 

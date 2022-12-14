@@ -1,7 +1,10 @@
-package com.xworkz.crud.dto;
+package com.xworkz.crud.service;
 
+import com.xworkz.crud.dto.War;
 import com.xworkz.crud.repository.ArrayisfullnowDontAddMore;
 import com.xworkz.crud.repository.WarRepositary;
+
+
 
 public class WarRepositaryImpl implements WarRepositary {
 
@@ -16,7 +19,7 @@ public class WarRepositaryImpl implements WarRepositary {
 		}
 
 		this.war[this.index] = war1;
-		System.out.println("Saved:" + war + "In index" + this.index);
+		System.out.println("Saved:"  + "In index" + this.index);
 		index++;
 
 		return false;

@@ -1,12 +1,14 @@
-package com.xworkz.crud.dto;
+package com.xworkz.crud.service;
 
+import com.xworkz.crud.dto.IPL;
+import com.xworkz.crud.exception.ArrayisFullcantaddMore;
 import com.xworkz.crud.repository.IPLRepository;
 
-public class IPLRepositoryImplements implements IPLRepository {
+
+public abstract class IPLRepositoryImplements implements IPLRepository {
 	private IPL[] ipl = new IPL[10];
 	private int currentIndex = 0;
 	
-	@Override
 	public boolean create(IPL ipl) throws ArrayisFullcantaddMore {
 		System.out.println("running create of IPL"+ipl);
 		if(this.currentIndex>=this.ipl.length) {

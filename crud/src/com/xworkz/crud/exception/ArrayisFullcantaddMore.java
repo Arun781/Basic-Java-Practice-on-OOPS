@@ -1,4 +1,4 @@
-package com.xworkz.crud.dto;
+package com.xworkz.crud.exception;
 
 public class ArrayisFullcantaddMore extends Exception {
 	/*

@@ -1,4 +1,4 @@
-package com.xworkz.crud.repository;
+package com.xworkz.crud.exception;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -11,6 +11,14 @@ public abstract class AbstractAudit implements Serializable {
 
 	public AbstractAudit() {
 		System.out.println("Creating the no Arguments Cons");
+	}
+
+	public AbstractAudit(String createdBy, LocalDateTime createdDate, String updatedBy, String updatedDate) {
+		super();
+		this.createdBy = createdBy;
+		this.createdDate = createdDate;
+		this.updatedBy = updatedBy;
+		this.updatedDate = updatedDate;
 	}
 
 	@Override
