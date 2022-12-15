@@ -64,7 +64,8 @@ public class PizzaServiceimpl implements PizzaService {
 		if(validName && validcompany && validflavour && validtype && validprice) {
 			System.out.println("Pizza DTO is valid " +pizzaDto);
 		}
-		
+		System.out.println("Pizza is not valid"+pizzaDto);
+		System.out.println(pizzaDto.toString());
 		return true;
 
 	}

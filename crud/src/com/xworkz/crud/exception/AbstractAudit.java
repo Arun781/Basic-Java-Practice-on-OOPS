@@ -7,13 +7,13 @@ public abstract class AbstractAudit implements Serializable {
 	private String createdBy;
 	private LocalDateTime createdDate;
 	private String updatedBy;
-	private String updatedDate;
+	private LocalDateTime updatedDate;
 
 	public AbstractAudit() {
 		System.out.println("Creating the no Arguments Cons");
 	}
 
-	public AbstractAudit(String createdBy, LocalDateTime createdDate, String updatedBy, String updatedDate) {
+	public AbstractAudit(String createdBy, LocalDateTime createdDate, String updatedBy, LocalDateTime updatedDate) {
 		super();
 		this.createdBy = createdBy;
 		this.createdDate = createdDate;
@@ -51,11 +51,11 @@ public abstract class AbstractAudit implements Serializable {
 		this.updatedBy = updatedBy;
 	}
 
-	public String getUpdatedDate() {
+	public LocalDateTime getUpdatedDate() {
 		return updatedDate;
 	}
 
-	public void setUpdatedDate(String updatedDate) {
+	public void setUpdatedDate(LocalDateTime updatedDate) {
 		this.updatedDate = updatedDate;
 	}
 }

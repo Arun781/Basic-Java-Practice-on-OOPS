@@ -21,7 +21,7 @@ public class PizzaRunner {
 		pizzaDTO.setCreatedBy("Arun Veerapur");
 		pizzaDTO.setCreatedDate(LocalDateTime.now());
 		pizzaDTO.setUpdatedBy("Arun.B.V");
-		//pizzaDTO.setCreatedDate(LocalDateTime.of(2022, 15, 21, 12, 25, 22));
+		pizzaDTO.setUpdatedDate(LocalDateTime.now());
 
 		PizzaServiceimpl pizzaService = new PizzaServiceimpl();
 		boolean saved = pizzaService.validateAndSave(pizzaDTO);

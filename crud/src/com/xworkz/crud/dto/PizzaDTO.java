@@ -13,12 +13,12 @@ public class PizzaDTO extends AbstractAudit {
 	private String type;
 	private boolean cheese;
 	private double price;
-
+	
 	public PizzaDTO() {
 		System.out.println("Running the Default PizzaDTO Constructor");
 	}
 
-	public PizzaDTO(String name, String company, PizzaSize size, String flavour, String type, boolean cheese,double price,String createdBy, LocalDateTime createdDate, String updatedBy, String updatedDate) {
+	public PizzaDTO(String name, String company, PizzaSize size, String flavour, String type, boolean cheese,double price,String createdBy,  LocalDateTime createdDate, String updatedBy, LocalDateTime updatedDate) {
 		super(createdBy,createdDate,updatedBy,updatedDate);
 		this.name = name;
 		this.company = company;
@@ -89,6 +89,12 @@ public class PizzaDTO extends AbstractAudit {
 
 	public void setPrice(double price) {
 		this.price = price;
+	}
+
+
+	public void setUpdatedDate(LocalDateTime now) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	
