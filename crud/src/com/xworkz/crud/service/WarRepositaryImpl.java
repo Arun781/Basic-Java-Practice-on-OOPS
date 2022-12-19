@@ -1,12 +1,16 @@
 package com.xworkz.crud.service;
 
 import com.xworkz.crud.dto.War;
-import com.xworkz.crud.repository.ArrayisfullnowDontAddMore;
 import com.xworkz.crud.repository.WarRepositary;
 
 
 
 public class WarRepositaryImpl implements WarRepositary {
+
+	public WarRepositaryImpl() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	War[] war = new War[10];
 	private int index = 0;
@@ -15,7 +19,7 @@ public class WarRepositaryImpl implements WarRepositary {
 	public boolean creating(War war1) {
 		if (this.index >=war.length) {
 			System.out.println("Exception Initialize");
-			throw new ArrayisfullnowDontAddMore();
+			throw new com.xworkz.crud.exception.ArrayisfullnowDontAddMore();
 		}
 
 		this.war[this.index] = war1;

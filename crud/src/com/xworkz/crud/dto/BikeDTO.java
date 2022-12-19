@@ -19,7 +19,6 @@ public class BikeDTO extends AbstractAudit {
 	public BikeDTO(String name, BrandName brandName, Double costOfBike, ColurName colur, String createdBy,
 			LocalDateTime createdDate, String updatedBy, LocalDateTime updatedDate) {
 		super(createdBy, createdDate, updatedBy, updatedDate);
-
 		this.name = name;
 		this.brandName = brandName;
 		this.costOfBike = costOfBike;

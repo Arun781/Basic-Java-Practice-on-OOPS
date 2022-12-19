@@ -15,7 +15,7 @@ public class BikeRepoImpl implements BikeRepo {
 		this.bike[currentIndex] = bikedto;
 		System.out.println("Saved to" + bikedto + "at index" + currentIndex);
 		this.currentIndex++;
-		return false;
+		return true;
 	}
 
 }

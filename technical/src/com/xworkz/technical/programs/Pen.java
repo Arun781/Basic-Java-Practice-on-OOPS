@@ -1,7 +1,6 @@
 package com.xworkz.technical.programs;
 
-public class Pen {
-
+public abstract class Pen  {
 	public void method1()
 	{
 		this.method2();

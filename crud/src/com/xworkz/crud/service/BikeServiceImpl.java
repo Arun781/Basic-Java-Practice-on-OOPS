@@ -14,6 +14,7 @@ public class BikeServiceImpl implements BikeService {
 
 	@Override
 	public boolean validateAndSave(BikeDTO bikeDTO) {
+		System.out.println("Running the validation" + bikeDTO);
 		String name = bikeDTO.getName();
 		BrandName brandName = bikeDTO.getBrandName();
 		Double costOfBike = bikeDTO.getCostOfBike();
@@ -49,9 +50,9 @@ public class BikeServiceImpl implements BikeService {
 		}
 
 		if (validcolur && validbrandName && validcostOfBike && Validname) {
-			System.out.println("Bike Service is Valid Can save the data to repositoty");
+			System.out.println("Bike Service is Valid Can save the data to repositoty" + bikeDTO);
 			boolean saved = this.bikedto.saveData(bikeDTO);
-			System.err.println("Bike dto is saved to bike repository" + saved);
+			System.out.println("Bike dto is saved to bike repository" + saved);
 		}
 		return true;
 	}
