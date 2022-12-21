@@ -60,7 +60,7 @@ public class CurrencyRunner {
 		collection.add(currency24);
 		collection.add(currency25);
 		collection.add(currency26);
-		System.out.println(collection.size());
+		System.out.println("The size of an CurrencyRunner is :-"+collection.size());
 		collection.clear();
 		System.out.println("After clearing"+collection);
 		System.out.println(collection.size());
