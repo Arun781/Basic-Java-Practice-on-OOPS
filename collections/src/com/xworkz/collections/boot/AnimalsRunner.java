@@ -1,4 +1,4 @@
-package com.xworkz.collections;
+package com.xworkz.collections.boot;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -29,7 +29,6 @@ public class AnimalsRunner {
 		animals.add(animal3);
 		animals.add(animal2);
 		animals.add(animal1);
-
 		
 		System.err.println("___________________________________________________");
 		System.out.println("The size of the Animal is:-" + animals.size());

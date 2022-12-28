@@ -46,9 +46,7 @@ public class Malls {
 		String mall38="City Centre, New Town (City Centre 2)";
 		String mall39="Crown Interiorz Mall";
 		String mall40="Pacific Mall, Ghaziabad";
-		
 		Collection collection = new HashSet();
-		
 		collection.add(mall1);
 		collection.add(mall2);
 		collection.add(mall3);
