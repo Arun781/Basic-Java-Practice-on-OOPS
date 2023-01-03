@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
+import com.xworkz.collections.dto.SanitizerDTO;
+
 public class SanitizerRunner {
 
 	public static void main(String[] args) {
