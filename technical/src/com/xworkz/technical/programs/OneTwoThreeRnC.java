@@ -4,12 +4,12 @@ public class OneTwoThreeRnC {
 
 	public static void main(String[] args) {
 		// Words and num;
-		for (int i = 1; i <= 3; i++) {
-			for (int j = 1; j <= 2; j++) {
+		for (int i = 1; i <=4; i++) {
+			for (int j = 1; j <= 4; j++) {
 				System.out.print(i);
 				// System.out.print("Hello World");
 			}
-			System.out.println("Arun");
+			System.out.println("Aishu");
 		}
 		/* ========================================================== */
 		System.out.println("===============================");
@@ -41,7 +41,10 @@ public class OneTwoThreeRnC {
 		System.out.println("===============================");
 		// Pyramid
 		/*
-		 * # ## ### ####
+		 * # 
+		 * ## 
+		 * ### 
+		 * ####
 		 */
 		for (int i = 0; i <= 3; ++i) {
 			for (int j = 0; j <= i; ++j) {
@@ -56,7 +59,7 @@ public class OneTwoThreeRnC {
 		 */
 		for (int i = 0; i <= 3; ++i) {
 			for (int j = 0; j <= i; ++j) {
-				System.out.print(" " + "" + i);
+				System.out.print(" " + " " + i);
 			}
 			System.out.println("");
 		}
