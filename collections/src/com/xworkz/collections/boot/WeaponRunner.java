@@ -31,7 +31,8 @@ public class WeaponRunner {
 		weaponDTOs.add(new WeaponDTO("Dirty bomb", "Navya", LocalDate.of(1994, 04, 25), 500D, WeaponType.Manual));
 		weaponDTOs.add(new WeaponDTO("Pistool", "Aishu", LocalDate.of(2004, 01, 30), 400D, WeaponType.LanceMissile));
 		weaponDTOs.add(new WeaponDTO("Paris Gun", "Spoorthi", LocalDate.of(2005, 02, 21), 300D, WeaponType.Firearms));
-		weaponDTOs.add(new WeaponDTO("Maxim machine gun", "Sanjay", LocalDate.of(2009, 01, 11), 200D, WeaponType.LanceMissile));
+		weaponDTOs.add(new WeaponDTO("Maxim_Machine_Gun", "Sanjay", LocalDate.of(2009, 01, 11), 200D,
+				WeaponType.LanceMissile));
 
 		System.out.println("Printing price is greater than");
 		weaponDTOs.stream().filter(dto -> dto.getPrice() > 1000).collect(Collectors.toList())
@@ -80,8 +81,6 @@ public class WeaponRunner {
 				.sorted((a1, a2) -> a2.getName().compareTo(a1.getName()))
 				.forEach(dto -> System.out.println(" Sorted Type " + dto.getType() + " Sorted madeBy " + dto.getMadeBy()
 						+ " Name is " + dto.getName()));
-
-
 	}
 
 }
