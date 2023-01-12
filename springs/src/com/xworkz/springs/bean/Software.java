@@ -9,16 +9,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class Software {
 	@Autowired
-	@Qualifier("SoftwareName")
+	@Qualifier("Softwarename")
 	private String Softwarename;
 	@Autowired
-	@Qualifier("3.5")
+	@Qualifier("version")
 	private Double version;
 	@Autowired
 	@Qualifier("SoftwareDevelopedBy")
-	private String developedBy;
+	private String SoftwareDevelopedBy;
 	@Autowired
-	@Qualifier("LocalDate")
+	@Qualifier("date")
 	private LocalDateTime date;
 	@Autowired
 	@Qualifier("free")
@@ -30,7 +30,7 @@ public class Software {
 
 	@Override
 	public String toString() {
-		return "Software [Softwarename=" + Softwarename + ", version=" + version + ", developedBy=" + developedBy + ", date=" + date
+		return "Software [Softwarename=" + Softwarename + ", version=" + version + ", SoftwareDevelopedBy=" + SoftwareDevelopedBy + ", date=" + date
 				+ ", free=" + free + "]";
 	}
 

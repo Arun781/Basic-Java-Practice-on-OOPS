@@ -17,13 +17,13 @@ public class Pencil {
 	private int price;
 	@Autowired
 	@Qualifier("pencilColur")
-	private String colur;
+	private String pencilColur;
 	@Autowired
 	@Qualifier("sharp")
 	private boolean sharp;
 	@Autowired
 	@Qualifier("PencilStolen")
-	private boolean stolen;
+	private boolean PencilStolen;
 
 	public Pencil() {
 		System.out.println("Running the Pencil no arg const");
@@ -31,8 +31,8 @@ public class Pencil {
 
 	@Override
 	public String toString() {
-		return "Pencil [PencilName=" + PencilName + ", PencilType=" + PencilType + ", price=" + price + ", colur="
-				+ colur + ", sharp=" + sharp + ", stolen=" + stolen + "]";
+		return "Pencil [PencilName=" + PencilName + ", PencilType=" + PencilType + ", price=" + price + ", pencilColur="
+				+ pencilColur + ", sharp=" + sharp + ", PencilStolen=" + PencilStolen + "]";
 	}
 
 	

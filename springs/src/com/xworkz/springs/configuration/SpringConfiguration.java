@@ -50,12 +50,12 @@ public class SpringConfiguration {
 		return "Maven";
 	}
 
-	@Bean("3.5")
+	@Bean("version")
 	public Double version() {
 		return 3.5d;
 	}
 
-	@Bean("developedBy")
+	@Bean("SoftwareDevelopedBy")
 	public String SoftwareDevelopedBy() {
 		return "Shashi";
 	}
@@ -92,7 +92,7 @@ public class SpringConfiguration {
 	}
 	
 	@Bean("PencilType")
-	public String type() {
+	public String PencilType() {
 		return "use and throw";
 	}
 	
@@ -101,8 +101,8 @@ public class SpringConfiguration {
 		return 50;
 	}
 	
-	@Bean("PencilBlack")
-	public String colur() {
+	@Bean("pencilColur")
+	public String pencilColur() {
 		return "black";
 	}
 	
@@ -112,7 +112,7 @@ public class SpringConfiguration {
 	}
 	
 	@Bean("PencilStolen")
-	public boolean stolen() {
+	public boolean PencilStolen() {
 		return true;
 	}
 	
