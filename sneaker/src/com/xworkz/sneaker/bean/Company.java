@@ -4,5 +4,5 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Company {
- private Location location;
+	private Location location;
 }
