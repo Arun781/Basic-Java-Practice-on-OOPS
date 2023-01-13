@@ -17,7 +17,6 @@ public class AllMethodsRunner {
 		String [] bean = applicationContext.getBeanDefinitionNames();
 		System.out.println(Arrays.toString(bean));
 		System.out.println("============================================================");
-		
 		NewsPaper newsPaper = applicationContext.getBean(NewsPaper.class);
 		System.out.println(newsPaper);
 		System.out.println("============================================================");
