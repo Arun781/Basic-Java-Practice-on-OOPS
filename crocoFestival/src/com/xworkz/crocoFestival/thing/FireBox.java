@@ -19,5 +19,5 @@ public class FireBox implements Browser {
 		System.out.println("OverRidden Browse Method From Browser...");
 		provider.connect();
 	}
-	
+
 }

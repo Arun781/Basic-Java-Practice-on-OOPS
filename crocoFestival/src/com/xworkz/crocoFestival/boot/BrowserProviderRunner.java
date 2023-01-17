@@ -14,9 +14,10 @@ public class BrowserProviderRunner {
 
 	public static void main(String[] args) {
 		ApplicationContext container = new AnnotationConfigApplicationContext(BrowserProviderConfiguration.class);
+		
 		System.out.println(Arrays.toString(container.getBeanDefinitionNames()));
+		System.out.println("================================================");
 		System.out.println(container.getBeanDefinitionCount());
-	
 		Browser browser=container.getBean("fireBox",Browser.class);
 		browser.browse();
 
