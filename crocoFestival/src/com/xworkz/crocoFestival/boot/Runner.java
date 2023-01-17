@@ -11,6 +11,7 @@ public class Runner {
 	public static void main(String[] args) {
 		ApplicationContext container = new AnnotationConfigApplicationContext(CrocoConfiguration.class);
 		System.out.println(Arrays.toString(container.getBeanDefinitionNames()));
+		
 		System.out.println(container.getBeanDefinitionCount());
 		PetrolBunk petrolBunk = container.getBean(PetrolBunk.class);
 

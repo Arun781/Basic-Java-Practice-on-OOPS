@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.xworkz.crocoFestival.configuration.BrowserProviderConfiguration;
+import com.xworkz.crocoFestival.thing.Browser;
 import com.xworkz.crocoFestival.thing.Chrome;
 import com.xworkz.crocoFestival.thing.FireBox;
 
@@ -15,10 +16,9 @@ public class BrowserProviderRunner {
 		ApplicationContext container = new AnnotationConfigApplicationContext(BrowserProviderConfiguration.class);
 		System.out.println(Arrays.toString(container.getBeanDefinitionNames()));
 		System.out.println(container.getBeanDefinitionCount());
-		Chrome chrome = container.getBean(Chrome.class);
-		chrome.browse();
-		FireBox firebox = container.getBean(FireBox.class);
-		firebox.browse();
+	
+		Browser browser=container.getBean("fireBox",Browser.class);
+		browser.browse();
 
 	}
 
