@@ -1,4 +1,4 @@
-package com.xworkz.tickets.price;
+package com.xworkz.tickets;
 
 public class RedBus {
 

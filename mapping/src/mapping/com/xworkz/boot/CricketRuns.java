@@ -10,7 +10,7 @@ public static void main(String[] args) {
 	runs.put("Rohit Sharma", 45000);
 	runs.put("Sachin Tendulkar", 30000);
 	runs.put("K L Rahul", 25000);
-	runs.put("M S Dhoni", 19000);
+	runs.put("M S Dhoni", 9000);
 	System.out.println("____________________________________________________________");
 	System.out.println("Sorting in descending order");
 	runs.forEach((k, v) -> System.out.println("Player :" + k + ":: Runs :" + v));

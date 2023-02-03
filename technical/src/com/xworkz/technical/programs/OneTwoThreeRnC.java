@@ -4,12 +4,12 @@ public class OneTwoThreeRnC {
 
 	public static void main(String[] args) {
 		// Words and num;
-		for (int i = 1; i <=4; i++) {
-			for (int j = 1; j <= 4; j++) {
+		for (int i = 0; i <=3; i++) {
+			for (int j = 1; j <= 2; j++) {
 				System.out.print(i);
 				// System.out.print("Hello World");
 			}
-			System.out.println("Aishu");
+			System.out.println(" "+"Aishu");
 		}
 		/* ========================================================== */
 		System.out.println("===============================");
@@ -329,7 +329,7 @@ public class OneTwoThreeRnC {
 		for (int row = 1; row <= 6; row++) {
 			for (int col = 1; col <= 6; col++) {
 				if (row == 3 && col == 5 || row == 4 && col == 4 || row == 5 && col == 3
-					|| row == 1 && col == 2 || row == 5 && col == 3 || row == 2 && col == 4
+					|| row == 1 && col == 1 || row == 5 && col == 3 || row == 2 && col == 4
 					|| row == 1 && col == 3) {
 					System.out.print("@");
 				} else {

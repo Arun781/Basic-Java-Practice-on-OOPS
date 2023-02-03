@@ -10,8 +10,8 @@ import com.xworkz.depository.services.FirstAidService;
 public class FirstAidRunner {
 
 	public static void main(String[] args) {
-		ApplicationContext spring = new AnnotationConfigApplicationContext(FirstAidConfiguration.class);
-		FirstAidService service = spring.getBean(FirstAidService.class);
+		ApplicationContext configuration = new AnnotationConfigApplicationContext(FirstAidConfiguration.class);
+		FirstAidService service = configuration.getBean(FirstAidService.class);
 		boolean saved = service.validateAndSave(new FirstAidDTO());
 		System.out.println(saved);
 	}
